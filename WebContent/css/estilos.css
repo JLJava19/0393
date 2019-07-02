@@ -1,0 +1,175 @@
+/*
+
+	Nuestra Hoja de Estilos Principal
+
+	@author Jose
+	@version 1.0
+	@fecha 2019 06 27
+
+	1. Reset     - resetear estilos del user-agent
+	2. Etiquetas - dar estilos base a todos los tags 
+	3. clases comunes
+	4. Layouts   - secciones de la web (cabecera, menus, pies, etc...)
+	5. Media Querys para RWD Responsive Web Design
+*/
+
+/*
+* Resetear
+***********************************************************************/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*
+* Etiquetas
+************************************************************************/
+
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+	background-color: #fff;
+}
+
+/*
+* 4. Layouts
+************************************************************************/
+
+.headline .title {
+    color: #2f363c;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -.015em;
+    line-height: 1.04;
+    margin-bottom: 0;
+    word-spacing: -.02em;
+}
+
+img{
+	width: 100%;
+	height:100%;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%)
+}
+ol, ul{
+	list-style-type: none;
+}
+footer{
+	
+	background-color: #DDD;
+	padding: 20px;
+	margin-top: 30px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+
+}
+a {
+	color: #0358d8;
+}
+
+a:hover {
+	color: #d86c5c;
+}
+
+h1{
+	color: #FFF;
+}
+
+.h3, .h4, .h5, .h6, h3, h4, h5, h6 {
+    font-size: 18px;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #2f363c;
+	margin-top: 5px;
+    margin-bottom: 6px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+p{
+	text-indent: 20px;
+}
+
+span{
+	margin: 1.5em;
+}
+.text-danger{
+	color: red;
+}
+
+
+
+.content{
+	max-width: 1024px;
+	margin:auto;	/* Centrado en horizontal */
+
+}
+
+main.content{
+	margin-top: 30px;
+}
+
+header.principal{
+	background-color: #003580;
+	color: #FFF;
+	position: fixed;
+	width: 100%;
+	/*padding: 10px;*/
+}
+
+/*
+#principal{
+	background-color: teal;
+	color: coral;
+	margin: 1px 2px 25px 5px;
+	padding: 10px 10px 10px 10px;
+	border: 5px solid #000;
+}
+
+
+#principal a:hover{
+	color: teal;
+	background-color: aliceblue;
+	border: 1px solid #00ffff;
+	transition-duration: 900ms;
+	padding: 20px;
+}
+*/
+
+nav {
+  padding: 1em 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #333;
+  margin-top: 32px;
+}
+nav li a.menu {
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: .5em 1em;
+}
+nav li a.menu:hover {
+  background: tomato;
+  color: white;
+}
+
+
+@media screen and (min-width: 480px) {
+    nav ul {
+      display: flex;
+    }
+  }
