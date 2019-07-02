@@ -31,7 +31,7 @@ public class YoutubeController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		String vista = "youtube/ver-video.jsp";
+		String vista = "ejemplos-jsp/youtube/ver-video.jsp";
 
 		// recibir parametros
 		String titulo = request.getParameter("titulo").trim();
@@ -40,10 +40,10 @@ public class YoutubeController extends HttpServlet {
 		// validar parametros
 		if (titulo == null || titulo.isEmpty() || titulo.length() < 2 || titulo.length() > 150) {
 			request.setAttribute("mensajeTitulo", "Por favor introduce el TÍTULO");
-			vista = "youtube/video.jsp";
+			vista = "ejemplos-jsp/youtube/video.jsp";
 		} else if (codigo == null || codigo.isEmpty() || codigo.length() != 11 ) {
 			request.setAttribute("mensajeCodigo", "Por favor introduce el CÓDIGO BIEN");
-			vista = "youtube/video.jsp";
+			vista = "ejemplos-jsp/youtube/video.jsp";
 		} else {
 			Youtube y1 = new Youtube(titulo, codigo);
 

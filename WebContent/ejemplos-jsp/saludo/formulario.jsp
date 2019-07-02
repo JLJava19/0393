@@ -8,7 +8,7 @@
 	
 	<h2>Soy un formulario</h2>
 	<p class="text-danger">${mensaje}</p>
-	<a href="index.jsp">Volver</a>
+	<a href="ejemplos-jsp/index.jsp">Volver</a>
 
 	<form action="saludar" method="get">
 		

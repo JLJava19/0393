@@ -8,8 +8,8 @@
 		<h2>Ejemplos básicos</h2>
 		<ol>
 			<li>1.1 <a href="ejemplos-jsp/saludo/formulario.jsp">Saludos</a></li>
-			<li>1.2 Perros</li>
-			<li>1.3 Youtube</li>
+			<li>1.2 <a href="ejemplos-jsp/perros/crear-perro.jsp">Perros</a></li>
+			<li>1.3 <a href="ejemplos-jsp/youtube/video.jsp">Youtube</a></li>
 		</ol>
 		<h2>Ejemplos avanzados</h2>
 		<ol>

@@ -1,12 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Saludo</title>
-</head>
-<body>
+
+<%@include file="../../includes/header.jsp" %>
+
+<main class="content">
+
 	<h1>Pagina saludo</h1>
 	<p>${saludo}</p>
 	<!-- Expression Language  -->
@@ -24,5 +22,7 @@
 	%>
 
 	<p><%=atributoSaludo%></p>
-</body>
-</html>
+	<br>
+	<a href="ejemplos-jsp/index.jsp">Volver</a>
+</main>
+<%@include file="../../includes/footer.jsp" %>

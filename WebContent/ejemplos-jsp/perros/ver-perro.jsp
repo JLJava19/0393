@@ -4,13 +4,10 @@
 <%@ page import="java.util.ArrayList"%>
 <%@ page import="java.util.List"%>
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
+<%@include file="../../includes/header.jsp" %>
+
+<main class="content">
+
 	<p>${perroEliminado}</p>
 	<p>${perro}</p>
 
@@ -66,7 +63,9 @@
 	
 	</ol>
 	
-	<a href="perros/crear-perro.jsp">CREAR PERRO</a>
+	<a href="ejemplos-jsp/perros/crear-perro.jsp">CREAR PERRO</a>
 	
-</body>
-</html>
+<a href="index.jsp">Inicio</a>
+
+</main>
+<%@include file="../../includes/footer.jsp" %>

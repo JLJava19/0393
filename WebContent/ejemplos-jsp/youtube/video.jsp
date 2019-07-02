@@ -1,13 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="ISO-8859-1">
-	<base href="http://localhost:8080/helloweb/">
-	<title>Insertar videos de youtube</title>
-</head>
-<body>
+<%@include file="../../includes/header.jsp" %>
+
+<main class="content">
 
 	<p>${mensajeTitulo}</p>
 	<p>${mensajeCodigo}</p>
@@ -28,5 +21,9 @@
 		<br>
 		<input type="submit" value="Enviar">
 	</form>
-</body>
-</html>
+
+
+<a href="index.jsp">Inicio</a>
+
+</main>
+<%@include file="../../includes/footer.jsp" %>

@@ -1,13 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="ISO-8859-1">
-	<base href="http://localhost:8080/helloweb/">
-<title>Perros</title>
-</head>
-<body>
+<%@include file="../../includes/header.jsp" %>
+
+<main class="content">
 
 
 <form action="PerroController" method="post">
@@ -31,6 +24,7 @@
 
 </form>
 
-<a href="../index.jsp">Inicio</a>
-</body>
-</html>
+<a href="index.jsp">Inicio</a>
+
+</main>
+<%@include file="../../includes/footer.jsp" %>
