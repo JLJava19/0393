@@ -19,12 +19,11 @@
 
 	<header class="principal">
 		<div class="content">
-			<h1><i class="fas fa-university"></i>IparWeb</h1>
+			<h1><i class="fas fa-university"></i>Ipar<span class="tituloEnMedio">Web</span>sidad</h1>
 		</div>
-	</header>
-
-
-	<nav>
+		
+	<div class="wrapper-nav">
+		<nav>
 		<ul>
 			<li><a class="menu" href="ejemplos-html/index.jsp">HTML</a></li>
 			<li><a class="menu" href="ejemplos-css/index.jsp">CSS</a></li>
@@ -32,5 +31,7 @@
 			<li><a class="menu" href="ejemplos-jsp/index.jsp">SERVLET + JSP</a></li>
 		</ul>
 	</nav>
-	
+	</div>	
+	</header>
+
 	

@@ -2,7 +2,7 @@
 
 <main class="content">
 
-	<h1 class="title">Introduccion CSS</h1>
+	<h2 class="title">Introduccion CSS</h2>
 	
 	<nav>
 		<h2>Introducción</h2>

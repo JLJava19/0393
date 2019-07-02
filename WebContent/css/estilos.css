@@ -17,9 +17,53 @@
 * Resetear
 ***********************************************************************/
 
-*{
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
 	margin: 0;
 	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 /*
@@ -113,8 +157,30 @@ span{
 
 }
 
+h1{
+	font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.wrapper-nav{
+	margin:auto;	/* Centrado en horizontal */
+	background: #f7f7f7;
+	width:100%; 
+	border-bottom: 1px solid #dee0e2;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 main.content{
-	margin-top: 30px;
+	margin-top: 80px;
+}
+
+#tituloEnMedio{
+	color: rgb(209, 221, 239);
 }
 
 header.principal{
@@ -122,6 +188,7 @@ header.principal{
 	color: #FFF;
 	position: fixed;
 	width: 100%;
+	top: 0;
 	/*padding: 10px;*/
 }
 
@@ -145,22 +212,39 @@ header.principal{
 */
 
 nav {
-  padding: 1em 0;
+  padding: 0em 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: auto;
+  max-width: 1024px;
 }
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  background: #333;
-  margin-top: 32px;
+
+ 
+
+    
 }
 nav li a.menu {
-  color: white;
+  color: #003580;
   display: block;
   text-decoration: none;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
+
+    background: #f7f7f7;
+   
+    position: static;
+    transition: box-shadow .28s cubic-bezier(.4,0,.2,1);
+    width: 100%;
+	z-index: 10000;
+	
+	line-height: 1;
+	
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 nav li a.menu:hover {
   background: tomato;

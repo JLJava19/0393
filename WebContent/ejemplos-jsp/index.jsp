@@ -2,7 +2,7 @@
 
 <main class="content">
 
-	<h1 class="title">Ejemplos SERVLET + JSP</h1>
+	<h2 class="title">Ejemplos SERVLET + JSP</h2>
 	
 	<nav>
 		<h2>Ejemplos básicos</h2>
