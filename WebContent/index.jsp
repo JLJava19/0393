@@ -1,7 +1,5 @@
 <%@include file="../includes/header.jsp" %>
 
-<main class="content">
-
 
 	
 	<nav id="principal"	>
@@ -32,5 +30,4 @@
 	<canvas></canvas>
 	<img alt="Texto alternativo" width="50%" src="images/descarga.jpg">
 	
-	</main>
 <%@include file="../includes/footer.jsp" %>

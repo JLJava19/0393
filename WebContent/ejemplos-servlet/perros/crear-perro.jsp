@@ -1,6 +1,5 @@
 <%@include file="../../includes/header.jsp" %>
 
-<main class="content">
 
 
 <form action="PerroController" method="post">
@@ -26,5 +25,4 @@
 
 <a href="index.jsp">Inicio</a>
 
-</main>
 <%@include file="../../includes/footer.jsp" %>

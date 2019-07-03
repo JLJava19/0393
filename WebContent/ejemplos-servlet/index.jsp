@@ -1,6 +1,5 @@
 <%@include file="../includes/header.jsp" %>
 
-<main class="content">
 
 	<h2 class="title">Ejemplos SERVLET + JSP</h2>
 	
@@ -17,5 +16,5 @@
 			<li>2.2 Próximamente</li>
 		</ol>
 	</nav>
-</main>
+
 <%@include file="../includes/footer.jsp" %>

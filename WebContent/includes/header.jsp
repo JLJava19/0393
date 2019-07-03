@@ -1,7 +1,19 @@
+<%
+	String title = request.getParameter("title");
+	
+	if ( title==null ){
+		title="";
+	}else{
+		title = " | " + title;
+	}
+
+	String active= request.getParameter("a");
+%>
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 <meta charset="ISO-8859-1">
 <base href="${pageContext.request.contextPath}/">
@@ -13,7 +25,7 @@
 <!-- Nuestras librerías -->
 <link rel="stylesheet" type="text/css"
 	href="css/estilos.css?<%=System.currentTimeMillis()%>" media="screen" />
-<title>Introducción a CSS</title>
+<title>HelloWeb<%=title%></title>
 </head>
 <body>
 
@@ -23,15 +35,16 @@
 		</div>
 		
 	<div class="wrapper-nav">
+
 		<nav>
 		<ul>
-			<li><a class="menu" href="ejemplos-html/index.jsp">HTML</a></li>
-			<li><a class="menu" href="ejemplos-css/index.jsp">CSS</a></li>
-			<li><a class="menu" href="ejemplos-js/index.jsp">JS</a></li>
-			<li><a class="menu" href="ejemplos-jsp/index.jsp">SERVLET + JSP</a></li>
+			<li><a href="ejemplos-html/index.jsp?title=HTML&a=1" class="<%=("1".equals(active))?"active":""%>">HTML</a></li>
+			<li><a href="ejemplos-css/index.jsp?title=CSS&a=2" class="<%=("2".equals(active))?"active":""%>">CSS</a></li>
+			<li><a href="ejemplos-js/index.jsp?title=JS&a=3" class="<%=("3".equals(active))?"active":""%>">JS</a></li>
+			<li><a href="ejemplos-servlet/index.jsp?title=SERVLET&a=4" class="active">SERVLET + JSP</a></li>
 		</ul>
-	</nav>
+		</nav>
 	</div>	
 	</header>
 
-	
+<main class="content">	

@@ -1,6 +1,5 @@
 <%@include file="../includes/header.jsp" %>
 
-<main class="content">
 
 	<h1 class="title">Selectores básicos</h1>
 	<hr>
@@ -46,5 +45,5 @@
 	  color: black;
 	}
 	</pre></code>
-</main>
+
 <%@include file="../includes/footer.jsp" %>

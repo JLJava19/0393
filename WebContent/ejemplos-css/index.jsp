@@ -1,6 +1,5 @@
 <%@include file="../includes/header.jsp" %>
 
-<main class="content">
 
 	<h2 class="title">Introduccion CSS</h2>
 	
@@ -17,6 +16,17 @@
 			<li>2.2 Selectores avanzados</li>
 			<li>2.3 Agrupación de reglas</li>
 		</ol>
+		<h2>Posicionamiento y visualización</h2>
+		<ol>
+			<li>5.1 <a href="ejemplos-css/posicionamiento.jsp">Tipos de elementos</a></li>
+			<li>5.2 <a href="ejemplos-css/posicionamiento.jsp">Posicionamiento</a></li>
+			<li>5.3 <a href="ejemplos-css/posicionamiento-normal.jsp">Posicionamiento normal</a></li>
+			<li>5.4 <a href="ejemplos-css/posicionamiento-relativo.jsp">Posicionamiento relativo</a></li>
+			<li>5.5 <a href="ejemplos-css/posicionamiento-absoluto.jsp">Posicionamiento absoluto</a></li>
+			<li>5.6 <a href="ejemplos-css/posicionamiento-fijo.jsp">Posicionamiento fijo</a></li>
+			<li>5.7 <a href="ejemplos-css/posicionamiento-flotante.jsp">Posicionamiento flotante</a></li>
+			<li>5.8 <a href="ejemplos-css/visualizacion.jsp">Visualización</a></li>
+		</ol>
 	</nav>
-</main>
+
 <%@include file="../includes/footer.jsp" %>

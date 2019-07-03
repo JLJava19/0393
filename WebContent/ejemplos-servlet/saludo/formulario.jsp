@@ -2,8 +2,6 @@
 	pageEncoding="ISO-8859-1"%>
 
 <%@include file="../../includes/header.jsp" %>
-
-<main class="content">
 	
 	
 	<h2>Soy un formulario</h2>
@@ -26,5 +24,4 @@
 	</form>
 
 
-</main>
 <%@include file="../../includes/footer.jsp" %>

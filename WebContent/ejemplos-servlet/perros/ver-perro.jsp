@@ -6,7 +6,6 @@
 
 <%@include file="../../includes/header.jsp" %>
 
-<main class="content">
 
 	<p>${perroEliminado}</p>
 	<p>${perro}</p>
@@ -67,5 +66,4 @@
 	
 <a href="index.jsp">Inicio</a>
 
-</main>
 <%@include file="../../includes/footer.jsp" %>

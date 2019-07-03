@@ -1,6 +1,5 @@
 <%@include file="../../includes/header.jsp" %>
 
-<main class="content">
 
 	<p>${mensajeTitulo}</p>
 	<p>${mensajeCodigo}</p>
@@ -25,5 +24,4 @@
 
 <a href="index.jsp">Inicio</a>
 
-</main>
 <%@include file="../../includes/footer.jsp" %>

@@ -3,7 +3,6 @@
 
 <%@include file="../../includes/header.jsp" %>
 
-<main class="content">
 
 	<h1>Pagina saludo</h1>
 	<p>${saludo}</p>
@@ -24,5 +23,5 @@
 	<p><%=atributoSaludo%></p>
 	<br>
 	<a href="ejemplos-jsp/index.jsp">Volver</a>
-</main>
+
 <%@include file="../../includes/footer.jsp" %>
