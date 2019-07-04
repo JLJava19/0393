@@ -26,6 +26,7 @@
 			<li>5.6 <a href="ejemplos-css/posicionamiento-fijo.jsp">Posicionamiento fijo</a></li>
 			<li>5.7 <a href="ejemplos-css/posicionamiento-flotante.jsp">Posicionamiento flotante</a></li>
 			<li>5.8 <a href="ejemplos-css/visualizacion.jsp">Visualización</a></li>
+			<li>5.8 <a href="ejemplos-css/foto.jsp">Foto</a></li>
 		</ol>
 	</nav>
 
