@@ -26,7 +26,9 @@
 			<li>5.6 <a href="ejemplos-css/posicionamiento-fijo.jsp">Posicionamiento fijo</a></li>
 			<li>5.7 <a href="ejemplos-css/posicionamiento-flotante.jsp">Posicionamiento flotante</a></li>
 			<li>5.8 <a href="ejemplos-css/visualizacion.jsp">Visualización</a></li>
-			<li>5.8 <a href="ejemplos-css/card.jsp">Ejercicio card</a></li>
+			<li>5.9 <a href="ejemplos-css/card.jsp">Ejercicio card</a></li>
+			<li>5.10 <a href="ejemplos-css/float.jsp">Ejercicio Float</a></li>
+			<li>5.11 <a href="ejemplos-css/float.jsp">Flexbox</a></li>
 		</ol>
 	</nav>
 

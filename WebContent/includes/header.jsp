@@ -6,7 +6,6 @@
 	}else{
 		title = " | " + title;
 	}
-
 	String active= request.getParameter("a");
 %>
 

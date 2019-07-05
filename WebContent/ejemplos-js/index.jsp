@@ -1,20 +1,22 @@
-<%@include file="../includes/header.jsp" %>
+<%@include file="../includes/header.jsp"%>
 
 
-	<h2 class="title">Ejemplos Javascript</h2>
+	<h2 id="titulo1">Introducción a Javascript</h2>
+	<p>Lorem ipsum</p>
+	<p>Lorem ipsum</p>
+	<p>Lorem ipsum</p>
+	<p>Lorem ipsum</p>
 	
-	<nav>
-		<h2>Ejemplos básicos</h2>
-		<ol>
-			<li>1.1 <a href="ejemplos-js/">Ejemplo 1</a></li>
-			<li>1.2 <a href="ejemplos-js/">Ejemplo 2</a></li>
-			<li>1.3 <a href="ejemplos-js/">Ejemplo 3</a></li>
-		</ol>
-		<h2>Ejemplos avanzados</h2>
-		<ol>
-			<li>2.1 Próximamente</li>
-			<li>2.2 Próximamente</li>
-		</ol>
-	</nav>
+	
+	<ol id="lista-animales">
+		<li>Cargando datos...</li>
+		<!-- 
+		<li>cat <i class="fas fa-cat fa-3x"></i></li>
+		<li>crow <i class="fas fa-crow fa-3x"></i></li>
+		<li>dog <i class="fas fa-dog fa-3x"></i></li>
+		 -->
+	</ol>
 
-<%@include file="../includes/footer.jsp" %>
+
+
+<%@include file="../includes/footer.jsp"%>

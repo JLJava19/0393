@@ -1,11 +1,8 @@
 /*
-
 	Nuestra Hoja de Estilos Principal
-
 	@author Jose
 	@version 1.0
 	@fecha 2019 06 27
-
 	1. Reset     - resetear estilos del user-agent
 	2. Etiquetas - dar estilos base a todos los tags 
 	3. clases comunes
@@ -161,8 +158,6 @@ header.principal{
 	padding: 10px 10px 10px 10px;
 	border: 5px solid #000;
 }
-
-
 #principal a:hover{
 	color: teal;
 	background-color: aliceblue;
@@ -239,3 +234,5 @@ nav li a.menu:hover {
       display: flex;
     }
   }
+
+
