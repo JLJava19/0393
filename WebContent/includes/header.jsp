@@ -27,7 +27,7 @@
 	href="css/estilos.css?<%=System.currentTimeMillis()%>" media="screen" />
 <title>HelloWeb<%=title%></title>
 </head>
-<body onload="obtenerAnyo()">
+<body id="top" onload="obtenerAnyo()">
 
 	<header class="principal">
 		<div class="content">

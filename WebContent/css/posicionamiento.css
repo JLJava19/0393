@@ -42,25 +42,47 @@
 	.ocultar{
 		display:none;
 	}
-	.card{
+	@keyframes pulse {
+  0% {
+    transform: scale(1);
+    color: #f98585;
+  }
+  100% {
+    transform: scale(1.5);
+    color: #f59707;
+  }
+}
+.card {
+  width: 400px;
+  position: relative;
+  overflow: hidden;
+}
+.card:hover .card-content {
+  bottom: 0;
+  animation-duration: 1s;
+}
+.card .card-content {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  color: #FFF;
+  position: absolute;
+  transition-duration: 1.5s;
+  bottom: -165px;
+}
+.card .card-content h2 {
+  color: #FFF;
+  font-weight: 600;
+  font-size: 1.6em;
+}
+.card .card-content .fa-heart {
+  float: right;
+  color: #f98585;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.card .card-content .fa-heart:hover {
+  animation: pulse .85s infinite alternate;
+  color: red;
+}
 
-	}
-	.card-content{
-		border: 1px solid #000;
-		position: relative;
-		width: 100%;
-		height: 100%;
-		background-color: aliceblue;
-	}
 
-	.card-content img{
-		width: 100%;
-		height: 100%;
-	}
-	.flotante{
-		position: relative;
-		top: -50px;
-		background-color: bisque;
-		height: 50px;
-		overflow: hidden;
-	}
