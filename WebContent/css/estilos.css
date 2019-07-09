@@ -3,7 +3,8 @@
 	@author Jose
 	@version 1.0
 	@fecha 2019 06 27
-	1. Reset     - resetear estilos del user-agent
+	0. Reset     - resetear estilos del user-agent
+	1. Animaciones o Keyframes
 	2. Etiquetas - dar estilos base a todos los tags 
 	3. clases comunes
 	4. Layouts   - secciones de la web (cabecera, menus, pies, etc...)
@@ -20,6 +21,22 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 * Etiquetas
 ************************************************************************/
 
+a ,a:visited{
+	color: #0358d8;
+	text-decoration: none;
+}
+
+/*
+a ,#menu.ul.li.a:visited{
+	color: #f7f7f7;
+	text-decoration: none;
+}
+*/
+
+a:hover {
+	color: #d86c5c;
+}
+
 body {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
@@ -31,54 +48,11 @@ body {
 	background-color: #fff;
 }
 
-/*
-* 4. Layouts
-************************************************************************/
-
-.headline .title {
-    color: #2f363c;
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: -.015em;
-    line-height: 1.04;
-    margin-bottom: 0;
-    word-spacing: -.02em;
-}
-
-img{
-	width: 100%;
-	height:100%;
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%)
-}
-ol, ul{
-	list-style-type: none;
-}
-footer{
-	
-	background-color: #DDD;
-	padding: 20px;
-	margin-top: 30px;
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-
-}
-a ,a:visited{
-	color: #0358d8;
-	text-decoration: none;
-}
-
-a:hover {
-	color: #d86c5c;
-}
-
 h1{
-	color: #FFF;
-}
-
-.h3, .h4, .h5, .h6, h3, h4, h5, h6 {
-    font-size: 18px;
+	font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
 }
 
 h2, h3, h4, h5, h6 {
@@ -90,32 +64,169 @@ h2, h3, h4, h5, h6 {
     line-height: 1.25;
 }
 
+.h3, .h4, .h5, .h6, h3, h4, h5, h6 {
+    font-size: 18px;
+}
+/*
+img{
+	width: 100%;
+	height:100%;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%)
+}
+*/
+article img {
+	width: 150px;
+	height: auto;
+	float:left;
+	margin: 0 10px 10px 0;
+	
+}
+
+footer{
+	
+	background-color: #DDD;
+	padding: 20px;
+	margin-top: 30px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	/*@ see Cuenta el border y padding dentro de la caja*/
+	box-sizing: border-box;
+
+}
+
+nav {
+  padding: 0em 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: auto;
+  max-width: 1024px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+    
+}
+
+nav li a.menu:hover {
+  
+  color: white;
+  padding: 3px, 8px;
+}
+
+ol, ul{
+	list-style-type: none;
+}
+
 p{
 	text-indent: 20px;
 	margin-bottom: 1em;
 	text-align: left
 }
-
+/*
 span{
 	margin: 1.5em;
 }
-.text-danger{
+*/
+
+label{
+	color: #003580;
+	margin-right: 15px;
+	display: inline-block;
+	text-align: right;
+	width: 180px;
+}
+
+label:after{
+	content: ":";
+}
+
+label.obligatorio:before{
+	content: "(*)";
+}
+
+input[type="text"], input[type="number"], input[type="email"]{
+	border: none;
+	border-bottom: 2px solid #003580;
+	padding: 5px;
+	font-size: 1em;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus{
+	font-size: 1.3em;
+	color: #003580;
+}
+/* En función del pattern y required se usa el valid o invalid */
+input[type="text"]:invalid, input[type="number"]:invalid, input[type="email"]:invalid{
+	font-size: 1.5em;
 	color: red;
 }
 
+input[type="text"]:valid, input[type="number"]:valid, input[type="email"]:valid{
+	font-size: 1em;
+	color: #043580;
+}
 
+
+input[type="submit"], input[type="reset"]{
+	background-color: #003580;
+	color: #FFF;
+	border-radius: 10px;
+	padding: 10px;
+	border: none;
+	margin-top: 20px;
+}
+
+input[type="submit"]:hover{
+	background-color: #0358d8;
+}
+
+input[type="reset"]{
+	background-color: cadetblue;
+}
+input[type="reset"]:hover{
+	background-color: coral;
+}
+
+/*
+* 4. Layouts
+************************************************************************/
+
+.marcoFino{
+	border: 1px solid #003580;
+	padding: 10px;
+}
+
+.volverInicio{
+
+	position: fixed;
+	
+    bottom: 6em;
+    right: 5em;
+	
+}
+
+.headline .title {
+    color: #2f363c;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -.015em;
+    line-height: 1.04;
+    margin-bottom: 0;
+    word-spacing: -.02em;
+}
+
+.text-danger{
+	color: red;
+}
 
 .content{
 	max-width: 1024px;
 	margin:auto;	/* Centrado en horizontal */
 
-}
-
-h1{
-	font-size: 2rem;
-    font-weight: 400;
-    line-height: 1.5;
-    text-align: left;
 }
 
 .wrapper-nav{
@@ -133,6 +244,7 @@ main.content{
 	margin-top: 80px;
 	/*background-color: red; Lo utilizamos para ver el espacio que ocupa con el inspector*/
 	margin-bottom: 70px;
+	min-height: 61vh;
 }
 
 .tituloEnMedio{
@@ -150,9 +262,9 @@ header.principal{
 	/*padding: 10px;*/
 }
 
-/*
+
 #principal{
-	background-color: teal;
+	background-color: rgba(0, 128, 128, 0.25);
 	color: coral;
 	margin: 1px 2px 25px 5px;
 	padding: 10px 10px 10px 10px;
@@ -165,33 +277,25 @@ header.principal{
 	transition-duration: 900ms;
 	padding: 20px;
 }
+
+
+/*
+.menu li{
+	padding: 30px;
+}
 */
 
-nav {
-  padding: 0em 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  margin: auto;
-  max-width: 1024px;
-}
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 
- 
-
-    
-}
 wrapper-nav nav li a {
-  color: #003580;
-  display: block;
-  text-decoration: none;
-  padding: 0.5em 1em;
+	color: #003580;
+	
+
+	text-decoration: none;
+	padding: 0.5em 1em;
 
     background: #f7f7f7;
-   
-    position: static;
+
+  
     transition: box-shadow .28s cubic-bezier(.4,0,.2,1);
     width: 100%;
 	z-index: 10000;
@@ -202,12 +306,60 @@ wrapper-nav nav li a {
 	font-weight: 700;
 	text-transform: uppercase;
 }
-nav li a.menu:hover {
-  background: tomato;
-  
-  color: white;
-  padding: 3px, 8px;
+
+#menu ul {
+	display: flex;
+	flex-direction: row;
+	/*justify-content: space-evenly;*/
 }
+
+
+
+#menu{
+	background:#f7f7f7;
+	border-bottom:1px solid #dee0e2;
+	position:static;
+	transition:box-shadow .28s cubic-bezier(.4,0,.2,1);
+	width:100%;z-index:10000;
+}
+#menu ul{
+	align-items:center;
+	height:32px;
+	list-style:none;
+	padding:0;
+}
+#menu li{
+	font-size:12px;
+	font-weight:700;
+	margin-right:28px;
+	text-transform:uppercase;
+}
+#menu a{
+	color:#003580;
+	line-height:1;
+	text-decoration:none;
+}
+#menu .active a{
+	background:#003580;
+	border-radius:2px;
+	color:#fff;
+	padding:3px 8px;
+}
+#menu.scrolling{
+	background:#003580;
+	border-bottom:0;
+	box-shadow:0 2px 5px rgba(0,0,0,.3);
+	position:fixed;
+	top:0;
+}
+#menu.scrolling a{
+	color:#fff
+}
+#menu.scrolling .active a{
+	background:#fff;
+	color:#003580;
+}
+
 
 .boton-arriba{
 	position: fixed;
@@ -225,14 +377,43 @@ nav li a.menu:hover {
 
 .active{
 	background: #003580  !important;
-	border-radius: 12px;
+	border-radius: 3px;
+	padding: 3px;
+	color: white !important;
 	/*font-size: 3em;*/
 }
 
-@media screen and (min-width: 480px) {
-    nav ul {
-      display: flex;
-    }
-  }
+.wikitable{
+	border: 1px solid #003580;
+
+}
+
+/* 5. Media Querys para RWD
+***********************************************************************/
+/* MOBILE L */
+/* @media (max-width: 425px), (orientation: landscape){*/
+@media (max-width: 425px){
+	footer#main{
+		position: relative;
+	}
+
+	.boton-arriba{
+		bottom: 0.5em;
+		right: 0.5em;
+	}
+
+	#menu ul{
+		justify-content:space-around;
+	}
+
+	h1{
+		font-size: 2em;
+	}
+	main.content{
+		padding: 5px;
+	}
+}
+
+
 
 

@@ -1,7 +1,7 @@
 <%@include file="../includes/header.jsp" %>
 
 
-	<h2 class="title">Introduccion CSS</h2>
+	<h1 class="title">Introduccion CSS</h1>
 	
 	<nav>
 		<h2>Introducción</h2>
@@ -13,7 +13,7 @@
 		<h2>Selectores</h2>
 		<ol>
 			<li>2.1 <a href="ejemplos-css/selectores-basicos.jsp">Selectores básicos</a></li>
-			<li>2.2 Selectores avanzados</li>
+			<li>2.2 <a href="ejemplos-css/selectores-avanzados.jsp">Selectores avanzados</a></li>
 			<li>2.3 Agrupación de reglas</li>
 		</ol>
 		<h2>Posicionamiento y visualización</h2>

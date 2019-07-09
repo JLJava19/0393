@@ -34,7 +34,7 @@ public class PerroController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// doGet(request, response);
-		String vista = "ejemplos-jsp/perros/ver-perro.jsp";
+		String vista = "ejemplos-servlet/perros/ver-perro.jsp";
 		String perroEliminado = request.getParameter("nombre");
 
 		Perro p1 = null;
@@ -61,7 +61,7 @@ public class PerroController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		String vista = "ejemplos-jsp/perros/ver-perro.jsp";
+		String vista = "ejemplos-servlet/perros/ver-perro.jsp";
 
 		// recibir parametros
 		String nombre = request.getParameter("nombre").trim();

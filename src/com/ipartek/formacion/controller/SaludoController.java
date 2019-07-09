@@ -30,7 +30,7 @@ public class SaludoController extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		String vista = "ejemplos-jsp/saludo/respuesta.jsp";
+		String vista = "ejemplos-servlet/saludo/respuesta.jsp";
 
 		// recibir parametros
 		String nombre = request.getParameter("nombre");
@@ -42,7 +42,7 @@ public class SaludoController extends HttpServlet {
 		// validar parametros
 		if (nombre == null || nombre.isEmpty()) {
 			request.setAttribute("mensaje", "Por favor introduce");
-			vista = "ejemplos-jsp/saludo/formulario.jsp";
+			vista = "ejemplos-servlet/saludo/formulario.jsp";
 		} else {
 
 			if ("eu".equalsIgnoreCase(idioma)) {

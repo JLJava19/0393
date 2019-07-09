@@ -6,11 +6,13 @@
 
 <%@include file="../../includes/header.jsp" %>
 
-
+	<h1>Perros:</h1>
 	<p>${perroEliminado}</p>
 	<p>${perro}</p>
 
 
+
+	<div class="marcoFino">
 	<%
 	if (request.getAttribute("perro")!=null){ 
 	%>
@@ -61,9 +63,9 @@
 	%>
 	
 	</ol>
-	
+	</div>
 	<a href="ejemplos-jsp/perros/crear-perro.jsp">CREAR PERRO</a>
 	
-<a href="index.jsp">Inicio</a>
+<div class="volverInicio"><a href="index.jsp"><i class="fas fa-chevron-circle-left  fa-3x"></i></a></div>
 
 <%@include file="../../includes/footer.jsp" %>

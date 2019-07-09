@@ -85,4 +85,7 @@
   color: red;
 }
 
+p > span { 
+	color: blue; 
+}
 
