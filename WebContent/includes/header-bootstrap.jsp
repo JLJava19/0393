@@ -51,7 +51,7 @@
 					aria-expanded="false"> Dropdown </a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 						<a class="dropdown-item" href="#">Acción</a> <a
-							class="dropdown-item" href="#">Otra accióon</a>
+							class="dropdown-item" href="#">Otra acción</a>
 						<div class="dropdown-divider"></div>
 						<a class="dropdown-item" href="#">Algo más aquí</a>
 					</div></li>
