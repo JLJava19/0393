@@ -32,8 +32,10 @@ function init(){
 		anclasMenu[1].classList.add('active');
 	} else if ( url.indexOf("ejemplos-js")!= -1){
 		anclasMenu[2].classList.add('active');
-	} else if ( url.indexOf("ejemplos-servlet")!= -1){
+	} else if ( url.indexOf("ejemplos-bootstrap")!= -1){
 		anclasMenu[3].classList.add('active');
+	} else if ( url.indexOf("ejemplos-servlet")!= -1){
+		anclasMenu[4].classList.add('active');
 	}
 
 }

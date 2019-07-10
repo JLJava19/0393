@@ -391,8 +391,8 @@ wrapper-nav nav li a {
 /* 5. Media Querys para RWD
 ***********************************************************************/
 /* MOBILE L */
-/* @media (max-width: 425px), (orientation: landscape){*/
-@media (max-width: 425px){
+@media (max-width: 425px), (orientation: landscape and max-width: 1024px){
+/*@media (max-width: 425px){*/
 	footer#main{
 		position: relative;
 	}

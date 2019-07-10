@@ -1,0 +1,20 @@
+/*
+	Custom Bootstrap
+	@author Jose
+	@version 1.0
+	@fecha 2019 07 09
+	0. Reset     - resetear estilos del user-agent
+	1. Animaciones o Keyframes
+	2. Etiquetas - dar estilos base a todos los tags 
+	3. clases comunes
+	4. Layouts   - secciones de la web (cabecera, menus, pies, etc...)
+	5. Media Querys para RWD Responsive Web Design
+*/
+
+/*
+* Resetear
+***********************************************************************/
+
+main.container{
+	margin-top: 3rem;
+}
