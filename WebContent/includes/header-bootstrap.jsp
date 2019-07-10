@@ -9,7 +9,7 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/custom-bootstrap.css">
+<link rel="stylesheet" href="../css/custom-bootstrap.css?<%=System.currentTimeMillis()%>">
 
 <title>Bootstrap 4.3.1</title>
 </head>
