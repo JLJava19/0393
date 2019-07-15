@@ -1,3 +1,6 @@
 /build/
 /.classpath
 /.project
+
+/WebContent/proyectoWeb/vendors
+/WebContent/proyectoWeb/img/favicon
